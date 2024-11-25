@@ -1,0 +1,21 @@
+[package]
+name = "zzapi"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.93"
+axum = "0.7.9"
+axum-response-cache = "0.1.1"
+clap = { version = "4.5.21", features = ["derive"] }
+html-escape = "0.2.13"
+image = "0.25.5"
+regex = "1.11.1"
+reqwest = "0.12.9"
+serde = { version = "1.0.215", features = ["derive"] }
+tokio = { version = "1.41.1", features = ["macros", "rt-multi-thread", "rt", "net"] }
+tower-http = { version = "0.6.2", features = ["cors"] }
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
+url = "2.5.4"
+urlencoding = "2.1.3"
