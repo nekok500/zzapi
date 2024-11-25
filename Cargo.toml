@@ -17,5 +17,4 @@ tokio = { version = "1.41.1", features = ["macros", "rt-multi-thread", "rt", "ne
 tower-http = { version = "0.6.2", features = ["cors"] }
 tracing = "0.1.40"
 tracing-subscriber = "0.3.18"
-url = "2.5.4"
 urlencoding = "2.1.3"

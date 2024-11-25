@@ -18,14 +18,11 @@ use reqwest::{header, Method};
 use serde::{Deserialize, Serialize};
 use tokio::net::TcpListener;
 use tower_http::cors::CorsLayer;
-use url::Url;
 
 #[derive(Clone, Parser)]
 struct Args {
     #[clap(short, long, default_value = "[::]:3319")]
     listen: SocketAddr,
-    #[clap(short, long, default_value = "https://zz.nekok500.com")]
-    base_url: Url,
 }
 
 struct AppError(anyhow::Error);
